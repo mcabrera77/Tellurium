@@ -1,20 +1,22 @@
-package TelluriumProj.Tellurium.src.main.java.Tellurium.Tellurium;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
+package TelluriumProj;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Node;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Element;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
-public class TestConfig {
+
+
+
+public class TestInterface {
 	 
-	public String login_url;
+	public String baseUrl;
 	public List<String> browserNames = new ArrayList<String> ();
-	public TestConfig(String file) {
+	public TestInterface(String file) {
  
 	  try {
  
@@ -24,8 +26,8 @@ public class TestConfig {
 		Document doc = dBuilder.parse(fXmlFile);
 		doc.getDocumentElement().normalize();
  
-		Element config = (Element) doc.getDocumentElement();
-		System.out.println("Root element :" + config.getNodeName());
+		Element Interface = (Element) doc.getDocumentElement();
+		System.out.println("Document " + Interface.getNodeName());
 
 		NodeList browsers = doc.getElementsByTagName("browser");
 		for (int temp = 0; temp < browsers.getLength(); temp++) {
@@ -33,7 +35,7 @@ public class TestConfig {
 			   Node browser = browsers.item(temp);
 			   browserNames.add(browser.getTextContent()); 
 		}
-		login_url = getTagValue("login_url", config);
+		baseUrl = getTagValue("baseUrl", Interface);
 		System.out.println("-----------------------");
  
 	  } catch (Exception e) {

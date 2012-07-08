@@ -1,16 +1,12 @@
-package TelluriumProj.Tellurium.src.main.java.Tellurium.Tellurium;
+package TelluriumProj;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class TestCase 
+public class Interface
 {
-    @SuppressWarnings("unused")
+
 	protected static String getStringValue(Element node, String sTag) {
 		System.out.println("...SignIn looking for " + sTag);
 		NodeList elemChilds = node.getChildNodes();
