@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projects>
+
+<new_project>
+  <project_name>SM-BOM_tiny </project_name>
+  <firstconcept_name>Tinytest</firstconcept_name>
+  <lifetimefuncunits>3650</lifetimefuncunits>
+  <file_location>\Users\mercedesnunez\Desktop\SM_BOM_tiny.txt</file_location>
+ 	<imported_items>Items successfully imported: 4 of 4</imported_items>
+ 	
+ 	 <parts_lists>
+  		<materials>Copper </materials> 
+  	 		 <add_proces> enameling</add_proces>
+  	 		 <add_proces> Extruding alum </add_proces>
+    </parts_lists>
+    
+    <parts_lists>
+   		<materials> Aluminum </materials> 
+    		 <add_proces> Heat Treatment,al </add_proces>
+     </parts_lists>
+     
+     <parts_lists>
+    	<materials>Steel</materials>
+    </parts_lists>
+    
+     <parts_lists>
+    	<materials>BASE ASSY</materials>
+     </parts_lists>
+  <system_bom>
+  
+  <mpts_results>1.86x103</mpts_results>
+  <ocala_co2> 134 </ocala_co2>
+  </system_bom>
+ <End_of_life> End of life</End_of_life>
+  </new_project>
+
+
+
+
+
+<clean>
+  <project_deletion> Delete</project_deletion>
+  <delete_message>Project was deleted.</delete_message>
+  <delete_confirmation>There are currently no projects.</delete_confirmation>
+  </clean>
+
+</projects>
