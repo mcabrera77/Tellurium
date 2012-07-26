@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projects>
+
+<new_project>
+  <project_name>SM-BOM_tiny </project_name>
+  	<firstconcept_name>Tinytest</firstconcept_name>
+ 		 <lifetimefuncunits>3650</lifetimefuncunits>
+  			<file_location>\Users\mercedesnunez\Desktop\SM_BOM_tiny.txt</file_location>
+ 					<imported_items>Items successfully imported: 4 of 4</imported_items>
+ 		
+ 		<parts_lists> 
+ 			<materials>Cooper</materials>
+  	 			 <add_proces> enameling</add_proces>
+  	 				 <add_proces> Extruding alum </add_proces>
+   		 				</parts_lists>
+    	 
+    	 <parts_lists> 
+    		<materials> Aluminum </materials>
+   	   		 	<add_proces> Heat Treatment,al </add_proces>
+  	   				</parts_lists>	
+  	   			
+     	 <parts_lists>
+     	 	 <materials>Steel	 </materials>	
+     	 		 </parts_lists>
+     	  
+     	 <parts_lists>
+     		 <materials>BASE ASSY </materials>
+     			 </parts_lists>	
+ </new_project>
+ 
+  <system_bom>
+  		<mpts_results>1.86x103</mpts_results>
+  			<ocala_co2> 134 </ocala_co2>
+ 				 </system_bom>
+	<End_of_life> 
+		<eol_materials>Copper</eol_materials>
+	 		<eol_method> Cooper, primary</eol_method>
+	 			<eol_process>Recycling</eol_process>
+					</End_of_life>
+	<End_of_life> 
+	<eol_materials> Steel </eol_materials>
+	 		<eol_method>Steel, slow-alloyed</eol_method>
+	 			<eol_process>steel, municipal incin.</eol_process>
+					</End_of_life>		
+ <use_materials>
+   <Use_consumables>Fuel</Use_consumables>
+   		<addconsumables> Diesel </addconsumables>
+    		<amount>20 oz</amount>
+     			<addconsumables> wood Palet </addconsumables>
+       				 <amount> 2 ft3</amount>
+ 						 </use_materials>
+  <use_materials>
+   <use_water>Water Use</use_water>
+  		<addwater>Water, deionised</addwater>
+   			<amount>1.5 gal</amount>
+   					
+   						 </use_materials>
+  <use_materials>
+   <use_power>Power Use</use_power>
+        <addpower>Solar electricity</addpower>
+        		<namepower> Photovoltaic, slant-roof, a-Si</namepower>
+      		  		<amount>3.24 kWh</amount>
+ 	  			 	
+ 							</use_materials>
+ 
+ 	  <delete power="Power Use">
+        <delete_power>Solar electricity</delete_power>
+        <delete_namepower> Photovoltaic, slant-roof, a-Si</delete_namepower>
+        <delete_amount> 3.24 kWh </delete_amount>
+ 	  </delete>
+ <useresults>
+     <use_mpts_results> 26.2</use_mpts_results>
+  		<use_ocala_co2> 8.64 </use_ocala_co2>
+	   </useresults>
+	   
+ <transportation> 
+	  <firsttransp_total>0</firsttransp_total>
+	  <add transBA= "BASE ASSY">
+	   		<add_transportation>Truck 7.5-16t </add_transportation>
+	  			 <add_miles>30 mi</add_miles>
+	      			<add_transportation>freighttrain, diesel </add_transportation>
+	      				<add_miles> 200 mi</add_miles>
+	     					 <add_transportation>Oceanic freighter </add_transportation>
+	       						 <add_miles> 1000 mi </add_miles>
+	       								 </add>
+	 <add transCopper= "Copper">
+			<add_transportation> aircraft, freight </add_transportation>
+	       		<add_miles> 4000 mi </add_miles>
+		 								</add>
+		 								
+		        		   								
+	 <add assembled= "Assembled product">				
+			<add_transportation> >aircraft, freight, intercontinental </add_transportation>
+	       			 <add_miles> 1000 mi </add_miles>    
+	       						</add>      
+	
+	    <transp_total>
+     			<transportation_mpts_results> 58.8</transportation_mpts_results>
+  						<transportation_ocala_co2> 85.4 </transportation_ocala_co2>
+	   						</transp_total>
+</transportation>
+   
+<clean>
+  <project_deletion> Delete</project_deletion>
+  <delete_message>Project was deleted.</delete_message>
+  <delete_confirmation>There are currently no projects.</delete_confirmation>
+  </clean>
+
+</projects>
